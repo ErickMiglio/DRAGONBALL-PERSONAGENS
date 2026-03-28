@@ -4,7 +4,7 @@ Catálogo de personagens de Dragon Ball Z, GT e Super com suas transformações.
 
 ## Preview
 
-![Preview](https://via.placeholder.com/800x400?text=Dragon+Ball+Characters)
+![Preview]
 
 Uma aplicação web que exibe todos os personagens das três séries principais de Dragon Ball com suas transformações específicas.
 
@@ -66,21 +66,6 @@ vercel login
 ```bash
 vercel
 ```
-
-4. Siga as instruções na tela
-
-## Estrutura do Projeto
-
-```
-Personagens_Dragon_Ball/
-├── api/
-│   └── index.php          # Aplicação principal
-├── vercel.json            # Configuração Vercel
-├── Dockerfile             # Configuração Docker
-├── docker-compose.yml     # Orquestração Docker
-└── README.md
-```
-
 ## Como Executar com Docker
 
 ### Pré-requisitos
