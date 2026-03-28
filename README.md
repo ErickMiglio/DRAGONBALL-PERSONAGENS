@@ -12,6 +12,7 @@ Uma aplicação web que exibe todos os personagens das três séries principais 
 
 - **PHP** (Backend)
 - **HTML5/CSS3** (Frontend)
+- **Docker** (Containerização)
 - **Vercel** (Hospedagem)
 
 ## Como Executar Localmente
@@ -31,7 +32,7 @@ cd Personagens_Dragon_Ball
 
 2. Inicie o servidor PHP:
 ```bash
-php -S localhost:8000
+php -S localhost:8000 -t api
 ```
 
 3. Abra o navegador:
@@ -72,15 +73,42 @@ vercel
 
 ```
 Personagens_Dragon_Ball/
-├── src/
+├── api/
 │   └── index.php          # Aplicação principal
 ├── vercel.json            # Configuração Vercel
+├── Dockerfile             # Configuração Docker
+├── docker-compose.yml     # Orquestração Docker
 └── README.md
+```
+
+## Como Executar com Docker
+
+### Pré-requisitos
+
+- Docker instalado
+- Docker Compose instalado
+
+### Passo a Passo
+
+1. Clone o repositório:
+```bash
+git clone <seu-repositorio>
+cd Personagens_Dragon_Ball
+```
+
+2. Inicie o container:
+```bash
+docker-compose up -d
+```
+
+3. Acesse a aplicação:
+```
+http://localhost:8080
 ```
 
 ## Personalização
 
-Os personagens estão definidos no array `$personagens` no arquivo `index.php`. Você pode adicionar novos personagens seguindo o formato:
+Os personagens estão definidos no array `$personagens` no arquivo `api/index.php`. Você pode adicionar novos personagens seguindo o formato:
 
 ```php
 'Nome da Série' => [
