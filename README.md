@@ -2,9 +2,9 @@
 
 Catálogo de personagens de Dragon Ball Z, GT e Super com suas transformações.
 
-## Preview
+## Preview 
 
-![Preview]
+[dragonball-personagens-erickmiglio.vercel.app](https://dragonball-personagens-erickmiglio.vercel.app/)
 
 Uma aplicação web que exibe todos os personagens das três séries principais de Dragon Ball com suas transformações específicas.
 
